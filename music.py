@@ -3,6 +3,7 @@ import asyncio
 import youtube_dl
 from discord.ext import commands
 import requests as rq
+import os
 from discord import opus
 
 
@@ -306,4 +307,5 @@ async def songs(msg):
             await bot.say("Currently no songs in queue")
 
 
-bot.run('YUR BOT TOKEN HERE')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
