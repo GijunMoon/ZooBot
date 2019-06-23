@@ -1,6 +1,7 @@
 #import Bot Lib
 import discord
 import os
+import asyncio
 
 app = discord.Client() #discord.Client as app
 
