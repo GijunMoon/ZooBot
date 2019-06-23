@@ -1,11 +1,9 @@
 #import Bot Lib
 import asyncio
 import discord
+import os
 
 app = discord.Client() #discord.Client as app
-
-#add token
-token = "NTkyMjcwODA0NzU5MzQ3MjEw.XQ85Og.tGzVuJJ1BT9BAnSxPVhCRRTIorY"
 
 #Bot System Line
 @app.event
@@ -27,4 +25,5 @@ async def on_message(message):
         await app.send_message(message.channel, "답변")
 
 
-app.run(token)
+access_token = os.environ["BOT_TOKEN"]
+app.run(access)
