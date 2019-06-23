@@ -21,7 +21,7 @@ async def on_ready():
 async def on_message(message):
     if message.autor.bot:
         return None #sent was bot
-    if message.content == "커맨드": #sent was user
+    if message.content.startswith("커맨드"): #sent was user
         await app.send_message(message.channel, "답변")
 
 
