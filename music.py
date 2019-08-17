@@ -3,9 +3,6 @@ import discord
 from discord.ext.commands import Bot
 import os
 
-# your bot token
-#TOKEN = "NTkyMjk3NjM5MzU4MzY1NzA3.XQ9SWg.0e8B_TuYitUtQNWKeBYTnv7_A4A"
-
 # create bot/client object
 client = Bot(command_prefix="!")
 
